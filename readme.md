@@ -8,7 +8,7 @@ Bu proje, C++ dilinde Brainfuck’un minimalist yaklaşımını yansıtarak, yal
 - Bunu sıradan `cout` ile değil, tek bir `char` değişkeni (`cell`) üzerinde `++` ile değer artırarak gerçekleştirmek.
 - Kodun her satırı anime referanslarıyla şekillendirilmiş.
 
-## 2. Anime Temalı `#define`’lar
+## 1. Anime Temalı `#define`’lar
 
 Koda anime/cyberpunk havası katmak için `#define` kullanarak C++’ın temel yapılarını yeniden adlandırdık:
 
@@ -31,7 +31,7 @@ Koda anime/cyberpunk havası katmak için `#define` kullanarak C++’ın temel y
 | `Yuno(x)`  | `x` (parantez içi)    | Yuno Gasai (Mirai Nikki) |
 | `Akino(x)` | `x` (parantez kapama) |                          |
 
-### 3. Karakter Üretimi
+### 2. Karakter Üretimi
 
 Kodda yazdırılan metin:
 
