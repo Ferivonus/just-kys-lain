@@ -1,44 +1,44 @@
-# Lain’i Çok seviyorum
+# I Love Lain So Much
 
-Bu projede tek bir değer üzerinden veri manipülasyonu yapılarak ekrana kelime yazdırılmıştır.
+In this project, data is manipulated using a single value to print a sentence on the screen.
 
-## 🎯 Amaç
+## 🎯 Goal
 
-- Sıkıntımın geçmesine uğraşmak.
-- Konsola `"Lain’i çok seviyorum"` yazdırmak.
+- To try to relieve my distress.
+- To print `"I love Lain so much"` to the console.
 
-## 1. Anime Temalı `#define`’lar
+## 1. Anime-Themed `#define`s
 
-Sıkıntım geçmesi için bazı şeyleri birazcık değiştirdim ama:
+To relieve my distress, I changed a few things a little bit:
 
-| Tanım      | Anlamı                | Kaynak/Referans          |
-| ---------- | --------------------- | ------------------------ |
-| `just`     | `using`               |                          |
-| `kill`     | `namespace`           |                          |
-| `yourself` | `std`                 |                          |
-| `Lain`     | `;`                   | Serial Experiments Lain  |
-| `learn`    | `for`                 |                          |
-| `more`     | `int`                 |                          |
-| `cpp`      | `main`                |                          |
-| `Kaito`    | `char`                | Vocaloid - Kaito         |
-| `IA`       | `=`                   | Vocaloid - IA            |
-| `Rin`      | `cout`                | Vocaloid - Rin           |
-| `Len`      | `<<`                  | Vocaloid - Len           |
-| `Teto`     | `return`              | Vocaloid - Teto          |
-| `Meiko(x)` | `x = x + 1`           | Vocaloid - Meiko         |
-| `Gumi(x)`  | `x = x - 1`           | Vocaloid - Gumi          |
-| `Yuno(x)`  | `x` (parantez içi)    | Yuno Gasai (Mirai Nikki) |
-| `Akino(x)` | `x` (parantez kapama) |                          |
+| Definition | Meaning             | Source/Reference         |
+| ---------- | ------------------- | ------------------------ |
+| `just`     | `using`             |                          |
+| `kill`     | `namespace`         |                          |
+| `yourself` | `std`               |                          |
+| `Lain`     | `;`                 | Serial Experiments Lain  |
+| `learn`    | `for`               |                          |
+| `more`     | `int`               |                          |
+| `cpp`      | `main`              |                          |
+| `Kaito`    | `char`              | Vocaloid - Kaito         |
+| `IA`       | `=`                 | Vocaloid - IA            |
+| `Rin`      | `cout`              | Vocaloid - Rin           |
+| `Len`      | `<<`                | Vocaloid - Len           |
+| `Teto`     | `return`            | Vocaloid - Teto          |
+| `Meiko(x)` | `x = x + 1`         | Vocaloid - Meiko         |
+| `Gumi(x)`  | `x = x - 1`         | Vocaloid - Gumi          |
+| `Yuno(x)`  | `x` (inside parens) | Yuno Gasai (Mirai Nikki) |
+| `Akino(x)` | `x` (close parens)  |                          |
 
-### 2. Karakter Üretimi
+## 2. Character Generation
 
-Kodda yazdırılan metin:
+The printed message in the code is:
 
-> **Lain’i çok seviyorum**
+> **I love Lain so much**
 
-Her karakterin ASCII değeri elle hesaplanarak `cell` değişkenine `++` ile ulaşılıyor ve ardından `cout << cell` ile yazdırılıyor. Her karakterden sonra `cell` sıfırlanıyor.
+Each character’s ASCII value is manually reached by incrementing the `cell` variable with `++`, and then printed using `cout << cell`. After each character, `cell` is reset to 0.
 
-ASCII dizisi şu şekildedir:
+The ASCII sequence is as follows:
 
 ```
 L (76)
@@ -47,11 +47,11 @@ i (105)
 n (110)
 ’ (39)
 i (105)
-(32)
+(space) (32)
 c (99)
 o (111)
 k (107)
-(32)
+(space) (32)
 s (115)
 e (101)
 v (118)
@@ -63,40 +63,41 @@ u (117)
 m (109)
 ```
 
-Her karakter şu şekilde yazılıyor:
+Each character is generated like this:
 
 ```
 Yuno(cell) IA 0 Lain
-learn(more i IA 0 Lain i < 76 Lain i++) { Meiko(cell) Lain } Rin Len Akino(cell) Lain
+learn(more i IA 0 Lain i < 76 Lain i++) { Meiko(cell) Lain }
+Rin Len Akino(cell) Lain
 ```
 
-Bu yapı her karakter için tekrar ediyor, yalnızca hedef ASCII değeri değişiyor.
+This structure is repeated for every character, only the target ASCII value changes.
 
-### 4. Kodun Özeti
+## 4. Code Summary
 
-- Yalnızca bir `char` (`cell`) kullanarak her karakter oluşturuluyor.
-- Kodun her satırı anime karakter isimleriyle ifade ediliyor.
-- Kod, hem Brainfuck’un estetiğini hem de anime kültürünü yansıtıyor.
-- **C++’ta yazılmış en duygusal beyin yakan kod** olabilir 💜
+- Only one `char` (`cell`) is used to construct each character.
+- Every line of the code is expressed using anime character names.
+- The code reflects both Brainfuck’s aesthetic and anime culture.
+- It might be **the most emotional brain-melting code ever written in C++** 💜
 
-## 🚀 Derleme ve Çalıştırma
+## 🚀 Compile and Run
 
 ```
 g++ -o lain_brainfuck lain_brainfuck.cpp
 ./lain_brainfuck
 ```
 
-Konsolda şu yazıyı görmelisiniz:
+You should see this output on the console:
 
 ```
-Lain’i çok seviyorum
+I love Lain so much
 ```
 
-## 💬 İlham Kaynakları
+## 💬 Sources of Inspiration
 
-- **Serial Experiments Lain** – İnternet, gerçeklik ve kimlik üzerine bir klasik.
-- **Vocaloid** – Sesin dijitalle buluştuğu yerde doğan karakterler.
-- **Brainfuck** – Minimalizmin zirvesi olan bir programlama dili.
-- **Yuno Gasai** – Sadakatin ve deliliğin ikonik simgesi.
+- **Serial Experiments Lain** – A classic on the internet, reality, and identity.
+- **Vocaloid** – Characters born where voice meets the digital.
+- **Brainfuck** – The pinnacle of minimalism in programming.
+- **Yuno Gasai** – The iconic symbol of loyalty and madness.
 
-> _“Herkes bağlı. Wired’a, Lain’e, duygulara.”_
+> _“Everyone is connected. To the Wired, to Lain, to emotions.”_
