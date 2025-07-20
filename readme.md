@@ -4,9 +4,8 @@ Bu proje, C++ dilinde Brainfuck’un minimalist yaklaşımını yansıtarak, yal
 
 ## 🎯 Amaç
 
+- Sıkıntımın geçmesine uğraşmak
 - Konsola `"Lain’i çok seviyorum"` yazdırmak.
-- Bunu sıradan `cout` ile değil, tek bir `char` değişkeni (`cell`) üzerinde `++` ile değer artırarak gerçekleştirmek.
-- Kodun her satırı anime referanslarıyla şekillendirilmiş.
 
 ## 1. Anime Temalı `#define`’lar
 
