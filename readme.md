@@ -8,39 +8,28 @@ Bu proje, C++ dilinde Brainfuck’un minimalist yaklaşımını yansıtarak, yal
 - Bunu sıradan `cout` ile değil, tek bir `char` değişkeni (`cell`) üzerinde `++` ile değer artırarak gerçekleştirmek.
 - Kodun her satırı anime referanslarıyla şekillendirilmiş.
 
-## 💡 Nasıl Yaptık?
-
-### 1. Brainfuck’tan Esinlenme
-
-Brainfuck, bir hücredeki değeri artırarak (`+`) ve azaltarak (`-`) karakterler üretir, `.` ile yazdırır. Bu projede de benzer şekilde:
-
-- `char cell = 0` ile başladık.
-- Her karakter için ASCII değerine ulaşana kadar `cell`’i artırdık.
-- Her adımda `cout << cell` ile karakteri yazdırdık.
-- Kod her karakterden sonra `cell = 0` ile sıfırlanıyor ve yeni karakter için tekrar artırılıyor.
-
-### 2. Anime Temalı `#define`’lar
+## 2. Anime Temalı `#define`’lar
 
 Koda anime/cyberpunk havası katmak için `#define` kullanarak C++’ın temel yapılarını yeniden adlandırdık:
 
-| Tanım      | Anlamı                | Kaynak/Referans            |
-| ---------- | --------------------- | -------------------------- |
-| `just`     | `using`               |                            |
-| `kill`     | `namespace`           |                            |
-| `yourself` | `std`                 |                            |
-| `Lain`     | `;`                   | Serial Experiments Lain    |
-| `more`     | `int`                 |                            |
-| `cpp`      | `main`                |                            |
-| `Kaito`    | `char`                | Vocaloid - Kaito           |
-| `IA`       | `=`                   | Vocaloid - IA              |
-| `Rin`      | `cout`                | Vocaloid - Rin             |
-| `Len`      | `<<`                  | Vocaloid - Len             |
-| `Teto`     | `return`              | Vocaloid - Teto            |
-| `Meiko(x)` | `x = x + 1`           | Vocaloid - Meiko           |
-| `Gumi(x)`  | `x = x - 1`           | Vocaloid - Gumi            |
-| `Yuno(x)`  | `x` (parantez içi)    | Yuno Gasai (Mirai Nikki)   |
-| `Akino(x)` | `x` (parantez kapama) | Anime uyumu                |
-| `learn`    | `for`                 | Öğrenmeyi vurgulayan ifade |
+| Tanım      | Anlamı                | Kaynak/Referans          |
+| ---------- | --------------------- | ------------------------ |
+| `just`     | `using`               |                          |
+| `kill`     | `namespace`           |                          |
+| `yourself` | `std`                 |                          |
+| `Lain`     | `;`                   | Serial Experiments Lain  |
+| `learn`    | `for`                 |                          |
+| `more`     | `int`                 |                          |
+| `cpp`      | `main`                |                          |
+| `Kaito`    | `char`                | Vocaloid - Kaito         |
+| `IA`       | `=`                   | Vocaloid - IA            |
+| `Rin`      | `cout`                | Vocaloid - Rin           |
+| `Len`      | `<<`                  | Vocaloid - Len           |
+| `Teto`     | `return`              | Vocaloid - Teto          |
+| `Meiko(x)` | `x = x + 1`           | Vocaloid - Meiko         |
+| `Gumi(x)`  | `x = x - 1`           | Vocaloid - Gumi          |
+| `Yuno(x)`  | `x` (parantez içi)    | Yuno Gasai (Mirai Nikki) |
+| `Akino(x)` | `x` (parantez kapama) |                          |
 
 ### 3. Karakter Üretimi
 
