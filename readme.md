@@ -41,7 +41,7 @@ Her karakterin ASCII değeri elle hesaplanarak `cell` değişkenine `++` ile ula
 
 ASCII dizisi şu şekildedir:
 
-hihihi
+```
 L (76)
 a (97)
 i (105)
@@ -62,14 +62,14 @@ o (111)
 r (114)
 u (117)
 m (109)
-hihihi
+```
 
 Her karakter şu şekilde yazılıyor:
 
-hihihi
+```
 Yuno(cell) IA 0 Lain
 learn(more i IA 0 Lain i < 76 Lain i++) { Meiko(cell) Lain } Rin Len Akino(cell) Lain
-hihihi
+```
 
 Bu yapı her karakter için tekrar ediyor, yalnızca hedef ASCII değeri değişiyor.
 
@@ -82,16 +82,16 @@ Bu yapı her karakter için tekrar ediyor, yalnızca hedef ASCII değeri değiş
 
 ## 🚀 Derleme ve Çalıştırma
 
-hihihi
+```
 g++ -o lain_brainfuck lain_brainfuck.cpp
 ./lain_brainfuck
-hihihi
+```
 
 Konsolda şu yazıyı görmelisiniz:
 
-hihihi
+```
 Lain’i çok seviyorum
-hihihi
+```
 
 ## 💬 İlham Kaynakları
 
