@@ -1,15 +1,15 @@
-# Lain’i Çok Seviyorum: Brainfuck Tarzı C++ ile Anime Temalı Kod
+# Lain’i Çok seviyorum
 
-Bu proje, C++ dilinde Brainfuck’un minimalist yaklaşımını yansıtarak, yalnızca tek bir `char` değişkeni üzerinde işlemler yaparak konsola "Lain’i çok seviyorum" mesajını yazdırıyor. Kod; **Serial Experiments Lain**, **Vocaloid karakterleri** (Miku, IA, Rin, Len, Meiko, Gumi, Kaito), ve **Yuno Gasai** gibi anime ikonlarından ilham alan `#define` makrolarıyla süslenmiş bir _cyberpunk_ estetiği taşıyor. 🌐🎶
+Bu projede tek bir değer üzerinden veri manipülasyonu yapılarak ekrana kelime yazdırılmıştır.
 
 ## 🎯 Amaç
 
-- Sıkıntımın geçmesine uğraşmak
+- Sıkıntımın geçmesine uğraşmak.
 - Konsola `"Lain’i çok seviyorum"` yazdırmak.
 
 ## 1. Anime Temalı `#define`’lar
 
-Koda anime/cyberpunk havası katmak için `#define` kullanarak C++’ın temel yapılarını yeniden adlandırdık:
+Sıkıntım geçmesi için bazı şeyleri birazcık değiştirdim ama:
 
 | Tanım      | Anlamı                | Kaynak/Referans          |
 | ---------- | --------------------- | ------------------------ |
