@@ -73,7 +73,7 @@ Rin Len Akino(cell) Lain
 
 This structure is repeated for every character, only the target ASCII value changes.
 
-## 4. Code Summary
+## 3. Code Summary
 
 - Only one `char` (`cell`) is used to construct each character.
 - Every line of the code is expressed using anime character names.
